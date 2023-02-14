@@ -1,5 +1,7 @@
 import galleryItemTpl from "../src/templates/gallery-item";
-import countries from './js/countries.json'
+import food from './js/food.json';
+import  '../src/style.css'
+
 // import '../src'
 // // const user = {
 // //     name: 'Poly',
@@ -40,9 +42,17 @@ import countries from './js/countries.json'
 
 
 
-const galleryRef = document.querySelector('.js-gallery');
+// const galleryRef = document.querySelector('.js-gallery');
 
-console.log(galleryItemTpl(countries));
-const markup = galleryItemTpl(countries)
+// console.log(galleryItemTpl(countries));
+// const markup = galleryItemTpl(countries)
 
-galleryRef.insertAdjacentHTML('beforeend', markup)
+// galleryRef.insertAdjacentHTML('beforeend', markup)
+
+
+
+const foodRef = document.querySelector(".js-gallery")
+
+const markup = galleryItemTpl(food)
+
+foodRef.insertAdjacentHTML('beforeend', markup)
