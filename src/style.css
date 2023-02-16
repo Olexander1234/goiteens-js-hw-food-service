@@ -225,3 +225,6 @@
   .button__icon {
     margin-right: 8px;
   }
+  .dark-theme{
+    background-color: #333;
+  }

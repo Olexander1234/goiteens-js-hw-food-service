@@ -56,3 +56,21 @@ const foodRef = document.querySelector(".js-gallery")
 const markup = galleryItemTpl(food)
 
 foodRef.insertAdjacentHTML('beforeend', markup)
+
+const switcher = document.querySelector(".theme-switch__toggle")
+
+switcher.addEventListener('click',switcherCheced )
+
+
+function switcherCheced () {
+    if (switcher.checked === true) {
+    document.body.classList.add("dark-theme");
+    const value = document.body.classList
+        localStorage.setItem('comment', value)
+    }
+    else{
+        document.body.classList.remove("dark-theme");
+        localStorage.removeItem('comment')
+    }
+}
+
