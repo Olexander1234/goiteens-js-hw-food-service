@@ -60,19 +60,25 @@ foodRef.insertAdjacentHTML('beforeend', markup)
 const switcher = document.querySelector(".theme-switch__toggle")
 
 switcher.addEventListener('change',switcherCheced )
-const value = switcher.checked === false;
-localStorage.setItem('comment', value)
+const value = null
+localStorage.setItem('comment',value)
 
 function switcherCheced () {
     const theme = localStorage.getItem('theme');
-    localStorage.removeItem('comment')
-    const value = switcher.checked === true;
-    localStorage.setItem('comment', value)
-    if(theme === true){
-        document.body.classList.add('dark-theme')
+const value = switcher.classList
+localStorage.setItem('comment',value)
+
+  
+    if(theme === theme-switch__toggle){
+        document.body.classList.add('.dark-theme')
        
     }
-    else{
-        document.body.classList.remove('dark-theme')
-    }
+else{
+    document.body.classList.remove('.dark-theme')
+    localStorage.remove('comment')
+    const value = null
+localStorage.setItem('comment',value)
+
+}
+   
 }
